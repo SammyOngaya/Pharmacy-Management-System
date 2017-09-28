@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF24777D-86BB-4239-8C30-E765C085CAB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PHARMACY</RootNamespace>
+    <AssemblyName>PHARMACY</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\sam\Desktop\C#\new pharmacy executable\pharmacy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>550A8C5BCB270D0817D9F92AA380FBDE866E2EF4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PHARMACY_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>form-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PHARMACY.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.3.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MYSQLBACKUP\binaries\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MYSQLBACKUP\binaries\v4.0\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDebtor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDebtor.Designer.cs">
+      <DependentUpon>AddDebtor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDrug.Designer.cs">
+      <DependentUpon>AddDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStaff.Designer.cs">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSupplier.Designer.cs">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHelp.Designer.cs">
+      <DependentUpon>AdminHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierCashSaleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierCashSaleWindow.Designer.cs">
+      <DependentUpon>CashierCashSaleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierDrugView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierDrugView.Designer.cs">
+      <DependentUpon>CashierDrugView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierHome.Designer.cs">
+      <DependentUpon>CashierHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierQuantitySaleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierQuantitySaleWindow.Designer.cs">
+      <DependentUpon>CashierQuantitySaleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierReports.Designer.cs">
+      <DependentUpon>CashierReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierViewNetStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierViewNetStock.Designer.cs">
+      <DependentUpon>CashierViewNetStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="DBHabdler.cs" />
+    <Compile Include="ExportDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportDatabase.Designer.cs">
+      <DependentUpon>ExportDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportDatabase.Designer.cs">
+      <DependentUpon>ImportDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerHome.Designer.cs">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreSalesReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreSalesReports.Designer.cs">
+      <DependentUpon>MoreSalesReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintingControl\printReceipt.cs" />
+    <Compile Include="PrintingControl\printSales.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuantitySale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuantitySale.Designer.cs">
+      <DependentUpon>QuantitySale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDebtor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDebtor.Designer.cs">
+      <DependentUpon>UpdateDebtor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDrug.Designer.cs">
+      <DependentUpon>UpdateDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStaff.Designer.cs">
+      <DependentUpon>UpdateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStock.Designer.cs">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSupplier.Designer.cs">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verification.Designer.cs">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebtor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDebtor.Designer.cs">
+      <DependentUpon>ViewDebtor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDrug.Designer.cs">
+      <DependentUpon>ViewDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNetStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewNetStock.Designer.cs">
+      <DependentUpon>ViewNetStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewSales.Designer.cs">
+      <DependentUpon>viewSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStaff.Designer.cs">
+      <DependentUpon>ViewStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStock.Designer.cs">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSupplier.Designer.cs">
+      <DependentUpon>ViewSupplier.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDebtor.resx">
+      <DependentUpon>AddDebtor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDrug.resx">
+      <DependentUpon>AddDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaff.resx">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSupplier.resx">
+      <DependentUpon>AddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHelp.resx">
+      <DependentUpon>AdminHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierCashSaleWindow.resx">
+      <DependentUpon>CashierCashSaleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierDrugView.resx">
+      <DependentUpon>CashierDrugView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierHome.resx">
+      <DependentUpon>CashierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierQuantitySaleWindow.resx">
+      <DependentUpon>CashierQuantitySaleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierReports.resx">
+      <DependentUpon>CashierReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierViewNetStock.resx">
+      <DependentUpon>CashierViewNetStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportDatabase.resx">
+      <DependentUpon>ExportDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportDatabase.resx">
+      <DependentUpon>ImportDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHome.resx">
+      <DependentUpon>ManagerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoreSalesReports.resx">
+      <DependentUpon>MoreSalesReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuantitySale.resx">
+      <DependentUpon>QuantitySale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDebtor.resx">
+      <DependentUpon>UpdateDebtor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDrug.resx">
+      <DependentUpon>UpdateDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStaff.resx">
+      <DependentUpon>UpdateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStock.resx">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSupplier.resx">
+      <DependentUpon>UpdateSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verification.resx">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDebtor.resx">
+      <DependentUpon>ViewDebtor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDrug.resx">
+      <DependentUpon>ViewDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewNetStock.resx">
+      <DependentUpon>ViewNetStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewSales.resx">
+      <DependentUpon>viewSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaff.resx">
+      <DependentUpon>ViewStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStock.resx">
+      <DependentUpon>ViewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSupplier.resx">
+      <DependentUpon>ViewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faith2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pmsoverview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="form-icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curve.jpg.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
