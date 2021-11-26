@@ -4,7 +4,7 @@ This system is a Pharmacy Point of Sale (POS) and Inventory Management System fo
 ideal system for any medium and small sized pharmacy enterprises. 
 
 ### [Admin Manual](https://github.com/SammyOngaya/Pharmacy-Management-System/blob/master/pms/Support/admin%20manual.pdf)
-### [Admin Manual](https://github.com/SammyOngaya/Pharmacy-Management-System/blob/master/pms/Support/pharmacist%20manual.pdf)
+### [Pharmacist Manual](https://github.com/SammyOngaya/Pharmacy-Management-System/blob/master/pms/Support/pharmacist%20manual.pdf)
 
 ## 1. Login
 You must be registered in order to log in to the system. If you are a registered user
